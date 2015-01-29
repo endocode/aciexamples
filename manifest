@@ -1,0 +1,17 @@
+{
+    "acVersion": "0.1.1",
+    "acKind": "ImageManifest",
+    "name": "github.com/endocode/aciexamples",
+    "labels": [
+        {"name": "os", "value": "linux"},
+        {"name": "arch", "value": "amd64"},
+        {"name": "version", "value": "1"}
+    ],
+    "app": {
+        "exec": [
+             "/aciexamples"
+        ],
+        "user": "0",
+        "group": "0"
+    },
+}
