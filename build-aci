@@ -13,10 +13,7 @@ if [ ! -x "$ACTOOL" ] ; then
     exit 1
 fi
 
-if [ ! -x bin/aciexamples ] ; then
-    echo "bin/aciexamples not found. Is it compiled?"
-    exit 1
-fi
+go build
 
 mkdir -p $IMAGEDIR/rootfs
 if [ ! -d $IMAGEDIR/rootfs -o ! -x $IMAGEDIR/rootfs ]; then
@@ -26,6 +23,7 @@ fi
 
 cp aciexamples          $IMAGEDIR/rootfs/
 cp README.md            $IMAGEDIR/rootfs/
+mkdir -p $IMAGEDIR/rootfs/proc
 mkdir -p $IMAGEDIR/rootfs/mnt/vol{1,2,3,4,5}
 
 cp manifest $IMAGEDIR/manifest
