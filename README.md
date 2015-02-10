@@ -1,4 +1,4 @@
-# aciexamples - Build a few ACI for testing purposes
+# aciexamples - Build an ACI for testing purposes
 
 
 ## Build
