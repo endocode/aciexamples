@@ -12,6 +12,13 @@
              "/aciexamples"
         ],
         "user": "0",
-        "group": "0"
+        "group": "0",
+        "workingDirectory": "/work",
+        "environment": [
+            {
+                "name": "ACI_MANIFEST_DEBUG",
+                "value": "true"
+            }
+        ]
     }
 }

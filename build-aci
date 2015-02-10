@@ -23,8 +23,9 @@ fi
 
 cp aciexamples          $IMAGEDIR/rootfs/
 cp README.md            $IMAGEDIR/rootfs/
-mkdir -p $IMAGEDIR/rootfs/proc
+mkdir -p $IMAGEDIR/rootfs/{proc,tmp,dev,work}
 mkdir -p $IMAGEDIR/rootfs/mnt/vol{1,2,3,4,5}
+touch $IMAGEDIR/rootfs/mnt/vol{1,2,3,4,5}/not-mounted
 
 cp manifest $IMAGEDIR/manifest
 
